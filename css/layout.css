@@ -1,0 +1,173 @@
+/*
+	Dux' Dekes
+
+	Layout © 2017, Jacob Hume
+	Licensed AGPLv3, Rock on.
+*/
+
+
+/*= Font Styles ============*/
+
+@font-face {
+	font-family: 'Site-Title';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Aleo'),
+		url('/fonts/aleo.woff') format('woff'),
+		url('/fonts/aleo.ttf') format('truetype');
+}
+
+
+/*= Base Styles ============*/
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	color: #225299;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: serif;
+	font-size: 1.2em;
+}
+
+footer,
+header,
+main {
+	padding: 1em;
+}
+
+footer {
+	clear: both;
+	color: #666;
+	text-align: center;
+}
+
+html {
+	background: #fefefe;
+}
+
+h1,h2,h3,h4 {
+	font-family: 'Site-Title', serif;
+}
+
+section>h1 {
+	margin-top: 0;
+}
+
+
+
+/*= Modules ================*/
+
+.a11y-link {
+	background: #fff;
+	position: fixed;
+	top: -10em;
+}
+
+.content {
+}
+
+.content-title {
+}
+
+.header {
+	background-color: #111;
+	background-image: url('/img/splash.jpg');
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	height: 20em;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.header>* {
+	margin: 0 2em;
+	flex 1 0 15em;
+	align-self: center;
+}
+
+.foot-nav {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -.5em;
+}
+
+.foot-nav>* {
+	/* Means:
+		1 - items can grow in size
+		0 - items cannot shrink beyond the initial
+		5em - initial size of items */
+	flex: 1 0 1em;
+	margin: .5em;
+}
+
+.header {
+	text-align: center;
+}
+
+.main-categories {
+	font-family: 'Site-Title', serif;
+	padding: 0;
+}
+
+.site-title {
+	font-size: 3em;
+}
+
+.site-subtitle {
+	font-size: 1.2em;
+	letter-spacing: .125em;
+}
+
+.site-subtitle::after,
+.site-subtitle::before {
+	content: "•";
+}
+
+.title-group {
+	font-family: 'Site-Title', serif;
+	font-variant: small-caps;
+}
+
+.top-tile {
+	list-style: none;
+	margin: 1em;
+}
+
+.top-tile a {
+	border: 2px solid #fff;
+	border-radius: .25em;
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	padding: 1em;
+}
+
+
+/*= State ==================*/
+
+.a11y-link:active,
+.a11y-link:focus {
+	top: 1em;
+}
+
+
+
+/*= Responsive =================*/
+
+@media screen and (max-width: 450px) {
+
+	body {
+		font-size: 1em;
+	}
+}
