@@ -1,7 +1,7 @@
 /*
-	Dux' Dekes
+	Dux' Dekes: Basic Styles
 
-	Layout © 2017, Jacob Hume
+	Layout © 2017, Jeff Duxbury, Dux' Dekes
 	Licensed AGPLv3, Rock on.
 */
 
@@ -39,7 +39,6 @@ body {
 }
 
 footer,
-header,
 main {
 	padding: 1em;
 }
@@ -86,6 +85,7 @@ section>h1 {
 	color: #fff;
 	height: 20em;
 	display: flex;
+	padding: 1em;
 	justify-content: center;
 	flex-wrap: wrap;
 }

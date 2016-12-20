@@ -1,0 +1,68 @@
+/*
+	Dux' Dekes: Homepage
+
+	Layout © 2017, Jeff Duxbury, Dux' Dekes
+	Licensed AGPLv3, Rock on.
+*/
+
+
+/*= Homepage Styles ========*/
+
+section {
+	border: 0 solid #555;
+	max-width: 50em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section+section {
+	border-top-width: 2px;
+}
+
+.main-categories {
+	font-family: 'Site-Title', serif;
+	padding: 0;
+}
+
+.product-subcategories {
+	columns: auto 15em;
+}
+
+.product-subcategories>li>a {
+	font-size: 1.1em;
+	display: inline-block;
+	padding: .5em 0;
+}
+
+.site-title {
+	font-size: 3em;
+}
+
+.site-subtitle {
+	font-size: 1.2em;
+	letter-spacing: .125em;
+}
+
+.site-subtitle::after,
+.site-subtitle::before {
+	content: "•";
+}
+
+.title-group {
+	font-family: 'Site-Title', serif;
+	font-variant: small-caps;
+}
+
+.top-tile {
+	list-style: none;
+	margin: 1em;
+}
+
+.top-tile a {
+	border: 2px solid #fff;
+	border-radius: .25em;
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	padding: 1em;
+}
