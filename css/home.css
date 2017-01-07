@@ -8,9 +8,21 @@
 
 /*= Homepage Styles ========*/
 
+/*
 section+section {
 	border: 0 solid #555;
 	border-top-width: 2px;
+}
+*/
+
+main {
+	padding: 0;
+}
+
+section {
+	background-image: linear-gradient(to top, #bbb, #fefefe);
+	min-height: 100vh;
+	padding: 0 1em;
 }
 
 .main-categories {
@@ -19,7 +31,17 @@ section+section {
 }
 
 .product-subcategories {
-	columns: auto 15em;
+	columns: auto 10em;
+	padding-left: .5em;
+}
+
+/* Fix for Chrome multi-column list marker bug */
+.product-subcategories>li {
+	list-style: none;
+}
+
+.product-subcategories>li::before {
+	content: "• ";
 }
 
 .product-subcategories>li>a {
@@ -64,9 +86,21 @@ section+section {
 
 /*= Responsive =================*/
 
+@media screen and (min-width: 800px) {
+
+	.product-subcategories {
+		columns: auto 15em;
+	}
+
+}
+
 @media screen and (max-width: 450px) {
 
 	.header {
 		padding: .5em;
+	}
+
+	.product-subcategories>li>a {
+		font-size: 1em;
 	}
 }
