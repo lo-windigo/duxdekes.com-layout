@@ -24,6 +24,7 @@
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	font-size: 1.2em;
 }
 
 *,
@@ -36,6 +37,8 @@
 
 a {
 	color: #225299;
+	-webkit-text-decoration-skip: ink;
+	text-decoration-skip: ink;
 }
 
 body {
@@ -43,11 +46,13 @@ body {
 	padding: 0;
 	color: #000;
 	font-family: serif;
-	font-size: 1.2em;
 }
 
 footer,
 main {
+	max-width: 52em;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 1em;
 }
 
@@ -91,7 +96,7 @@ section>h1 {
 	background-position: center;
 	background-size: cover;
 	color: #fff;
-	height: 20em;
+	min-height: 20em;
 	display: flex;
 	padding: 1em;
 	justify-content: center;
@@ -148,17 +153,24 @@ section>h1 {
 }
 
 .top-tile {
+	border-radius: .25em;
 	list-style: none;
 	margin: 1em;
+	padding: 0;
 }
 
 .top-tile a {
-	border: 2px solid #fff;
+	border: 0 solid #fff;
 	border-radius: .25em;
+	border-width: 2px;
+	background-color: rgba(0,0,0,0);
 	color: #fff;
 	display: block;
+	margin-left: 2px;
+	margin-right: 2px;
 	font-weight: bold;
 	padding: 1em;
+	transition: background-color .25s ease;
 }
 
 
@@ -169,13 +181,24 @@ section>h1 {
 	top: 1em;
 }
 
+.top-tile a:active,
+.top-tile a:focus,
+.top-tile a:hover {
+	background-color: rgba(0,0,0,.5);
+}
 
 
 /*= Responsive =================*/
 
 @media screen and (max-width: 450px) {
 
-	body {
+	:root {
 		font-size: 1em;
+	}
+
+	.main-categories,
+	.title-group {
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
