@@ -1,19 +1,13 @@
 /*
 	Dux' Dekes: Homepage
 
-	Layout © 2017, Jeff Duxbury, Dux' Dekes
+	Layout created by Jacob Hume
+	©2017, Jeff Duxbury, Dux' Dekes
 	Licensed AGPLv3, Rock on.
 */
 
 
 /*= Homepage Styles ========*/
-
-/*
-section+section {
-	border: 0 solid #555;
-	border-top-width: 2px;
-}
-*/
 
 main {
 	padding: 0;
@@ -33,6 +27,18 @@ section>h2 {
 	min-height: 20em;
 }
 
+/*
+ * BETTER DISTRIBUTE SPACE IN LONG LISTINGS
+.long-listing {
+	float: left;
+	display: block;
+}
+
+.long-listing h2 {
+	font-size: 1.1em;
+	padding-top: .75em;
+}
+*/
 .main-categories {
 	font-family: 'Site-Title', serif;
 	padding: 0;
