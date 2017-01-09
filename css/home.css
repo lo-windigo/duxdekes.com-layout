@@ -25,26 +25,34 @@ section {
 	padding: 0 1em;
 }
 
+section>h2 {
+	font-size: 1.1em;
+}
+
+.header {
+	min-height: 20em;
+}
+
 .main-categories {
 	font-family: 'Site-Title', serif;
 	padding: 0;
 }
 
-.product-subcategories {
+.product-categories {
 	columns: auto 10em;
 	padding-left: .5em;
 }
 
 /* Fix for Chrome multi-column list marker bug */
-.product-subcategories>li {
+.product-categories>li {
 	list-style: none;
 }
 
-.product-subcategories>li::before {
+.product-categories>li::before {
 	content: "• ";
 }
 
-.product-subcategories>li>a {
+.product-categories>li>a {
 	font-size: 1.1em;
 	display: inline-block;
 	padding: .5em 0;
@@ -88,7 +96,7 @@ section {
 
 @media screen and (min-width: 800px) {
 
-	.product-subcategories {
+	.product-categories {
 		columns: auto 15em;
 	}
 
@@ -100,7 +108,7 @@ section {
 		padding: .5em;
 	}
 
-	.product-subcategories>li>a {
+	.product-categories>li>a {
 		font-size: 1em;
 	}
 }
